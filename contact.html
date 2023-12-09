@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PonDesign</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="PON DESIGN">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./news.html">
+                            NEWS
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./service.html">
+                            SERVICE
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./works.html">
+                            WORKS
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./company.html">
+                            COMPANY
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./recruit.html">
+                            RECRUIT
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./contact.html">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" id="js-hamburger-menu">
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+            </div>
+            <nav class="js-nav">
+                <ul>
+                    <li><a href="./news.html">NEWS</a></li>
+                    <li><a href="./service.html">SERVICE</a></li>
+                    <li><a href="./works.html">WORKS</a></li>
+                    <li><a href="./company.html">COMPANY</a></li>
+                    <li><a href="./recruit.html">RECRUIT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__title">
+            <h1 class="heading__h1">
+                CONTACT
+            </h1>
+            <span class="heading__h1--ja">
+                お問い合わせ
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact breadcrumb">
+            HOME > CONTACT
+        </div>
+        <div class="contact__content">
+            <p class="contact__lead">
+                Webサイトの制作のご依頼やお見積りなど、<br>お気軽にご相談ください。
+            </p>
+            <div class="form__area wrapper">
+                <form action="#" method="post">
+                    <div class="form__inner">
+                        <div class="form__title">
+                            お問い合わせ種別
+                        </div>
+                        <span class="form__item--inside">*必須</span>
+                    </div>
+                    <div class="radio__area">
+                        <div class="radio">
+                            <input type="radio" id="inp1" name="radio__btn" value="お仕事のご依頼・ご相談" checked>
+                            <label for="inp1">お仕事のご依頼・ご相談</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="inp2" name="radio__btn" value="お見積りのご依頼">
+                            <label for="inp2">お見積りのご依頼</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="inp3" name="radio__btn" value="採用について">
+                            <label for="inp3">採用について</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="inp4" name="radio__btn" value="その他">
+                            <label for="inp4">その他</label>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="name" class="form__title">お名前
+                            <span class="form__item--inside">*必須</span>
+                        </label>
+                        <input id="name" type="text" name="yourname">
+                    </div>
+                    <div class="form__item">
+                        <label for="companyname" class="form__title">
+                            会社名
+                        </label>
+                        <input id="companyname" type="text" name="company">
+                    </div>
+                    <div class="form__item">
+                        <label for="mail" class="form__title">メールアドレス
+                            <span class="form__item--inside">*必須</span>
+                        </label>
+                        <input id="mail" type="email" name="mail">
+                    </div>
+                    <div class="form__item">
+                        <label for="num" class="form__title">お電話番号
+                            <span class="form__item--inside">（半角数字ハイフンなし）</span>
+                        </label>
+                        <input id="num" type="number" name="tel-num">
+                    </div>
+                    <div class="form__item">
+                        <label for="message" class="form__title">お問い合わせ内容
+                            <span class="form__item--inside">*必須</span>
+                        </label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="form__item">
+                        <label for="choices" class="form__title">PON DESIGNをどちらでお知りになりましたか？
+                            <span class="form__item--inside">*必須</span>
+                        </label>
+                        <select id="choices" name="choices">
+                            <option value="選択してください">選択してください</option>
+                            <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                            <option value="SNS">SNS</option>
+                            <option value="ブログ">ブログ</option>
+                            <option value="友人や知人">友人や知人</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                    <input class="btn" type="submit" value="送信する">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="footer__list">
+            <li class="footer__item footer__item--sp">
+                <a href="#">
+                    HOME
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="./news.html">
+                    NEWS
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="./service.html">
+                    SERVICE
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="./works.html">
+                    WORKS
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="./company.html">
+                    COMPANY
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="./recruit.html">
+                    RECRUIT
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="./contact.html">
+                    CONTACT
+                </a>
+            </li>
+        </ul>
+        <div class="copyright">
+            &copy; PON DESIGN
+        </div>
+        <div class="pagetop__btn">
+            <a href="#"></a>
+        </div>
+    </footer>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
